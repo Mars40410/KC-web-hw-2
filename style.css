@@ -1,0 +1,167 @@
+
+
+    body {
+      margin: 0; 
+      background-color: rgb(44, 44, 44);
+      font-family: 'Titillium Web', sans-serif;
+    }
+    
+    
+    
+    .header {
+        background-color: rgb(53, 53, 53);
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        display: flex; 
+    
+        justify-content:space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1300;
+        top: 0;
+        left: auto;
+        right: 0;
+        position: fixed;
+        
+    }
+    
+    
+    
+    .left {
+         
+        display: flex; 
+        align-items: center;
+        color: white;
+    }
+    
+    .left h2 { 
+       
+        margin:15px;
+        font-size: 25px;
+    }
+    
+    
+    
+    .right {
+        display: flex;
+        align-items: center;
+       
+    }
+    
+    .right a {
+        
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 5px;
+        margin-right: 15px;
+    }
+    .right a:hover {
+        color: black;
+    }
+    
+    
+    
+    
+    
+    .box {
+        background-color: rgb(58, 58, 58);
+        width: 200px;
+        height: 300px;
+        margin: 5px;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 0.5;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        cursor: crosshair;
+
+
+    
+    }
+    
+    .box img {
+        width: 90%; 
+    } 
+    .box:hover {
+        box-shadow: rgb(255 28 28 / 35%) 0px 5px 15px;
+        opacity: 1;
+        transform :rotateY(-180deg ) ;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    
+    
+    
+    .container {
+        margin: 10px auto;
+        display: flex; 
+        justify-content: center;
+        height: 100vh;
+        flex-wrap: wrap;
+        perspective: 600px;
+        
+        }
+
+ 
+       
+  
+
+
+ .box .face {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden;
+ }
+
+ .box .front {
+    background-color: rgb(58, 58, 58);
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0.5;
+
+   
+
+
+
+
+
+ }
+.box .back { 
+background-color: cornflowerblue;
+transform: rotateY(180deg);
+
+}
+
+
+
+.part1{
+display: flex;
+justify-content: center;
+
+
+}
